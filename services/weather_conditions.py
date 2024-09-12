@@ -1,6 +1,6 @@
 import requests
 import json
-from files_reader import *
+# from files_reader import *
 
 
 
@@ -8,10 +8,10 @@ my_key = ''
 city = 'yemen'
 my_loc = ''
 
-def maped_cities():
-    targets_dict = read_from_json(targets_json_file)
-    filtered_cities = list(map(lambda city: city['City'], [i for i in targets_dict]))
-    return filtered_cities
+# def maped_cities():
+#     targets_dict = read_from_json(targets_json_file)
+#     filtered_cities = list(map(lambda city: city['City'], [i for i in targets_dict]))
+#     return filtered_cities
 
 def get_weather_temperature(city):
     url = f"https://api.openweathermap.org/data/2.5/forecast?q={city}&appid=55d034e4413bb6e5ecc16af4a6300c1c"
@@ -42,7 +42,7 @@ def geo_coordinates(city):
     new_dict['lon'] = get_geo[0]['lon']
     new_dict['lat'] = get_geo[0]['lat']
     return new_dict
-print(geo_coordinates(city))
+# print(geo_coordinates(city))
 
 
 def filter_the_weather():
@@ -54,9 +54,16 @@ def filter_the_weather():
     new_dict["main"] = get_weather["list"][0]["weather"][0]["main"]
     new_dict["clouds"] = get_weather["list"][0]["clouds"]["all"]
     new_dict["speed"] = get_weather["list"][0]["wind"]["speed"]
-    new_dict["dt_txt"] = get_weather["list"][4]["dt_txt"]
+    new_dict["dt_txt"] = get_weather["list"][3]["dt_txt"]
     return new_dict
 # print(filter_the_weather())
+
+def get_weather(city):
+    weather = get_weather_temperature(city)
+    w = {}
+    w['clouds'] = weather["list"][0]["clouds"]["all"]
+    return w
+
 
 
 

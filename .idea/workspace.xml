@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b818ac01-d38c-40f0-aa9b-6b45dc26a980" name="Changes" comment="creata the reads from json">
+    <list default="true" id="b818ac01-d38c-40f0-aa9b-6b45dc26a980" name="Changes" comment="aplly classe">
+      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/algorithms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_files/air_strike_targets.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/aircrafts.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/aircrafts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/pilots.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/pilots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/targets.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/targets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/files_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/files_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/weather_conditions.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/weather_conditions.py" afterDir="false" />
     </list>
@@ -34,23 +38,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.files_reader.executor&quot;: &quot;Run&quot;,
-    &quot;Python.json_reader.executor&quot;: &quot;Run&quot;,
-    &quot;Python.json_service.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.weather_conditions.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.aircrafts.executor": "Debug",
+    "Python.files_reader.executor": "Run",
+    "Python.json_reader.executor": "Run",
+    "Python.json_service.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.pilots.executor": "Run",
+    "Python.weather_conditions.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="files_reader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Air_Strike" />
@@ -155,7 +161,7 @@
       <workItem from="1726133257447" duration="245000" />
       <workItem from="1726133608234" duration="392000" />
       <workItem from="1726134057990" duration="5505000" />
-      <workItem from="1726140953222" duration="1640000" />
+      <workItem from="1726140953222" duration="7793000" />
     </task>
     <task id="LOCAL‎-00001" summary="creata the reads from json">
       <option name="closed" value="true" />
@@ -173,7 +179,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726141583582</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL‎-00003" summary="aplly classe">
+      <option name="closed" value="true" />
+      <created>1726143300768</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726143300768</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +195,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creata the reads from json" />
-    <option name="LAST_COMMIT_MESSAGE" value="creata the reads from json" />
+    <MESSAGE value="aplly classe" />
+    <option name="LAST_COMMIT_MESSAGE" value="aplly classe" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,10 +210,12 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Air_Strike$weather_conditions.coverage" NAME="weather_conditions Coverage Results" MODIFIED="1726141988221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
+    <SUITE FILE_PATH="coverage/Air_Strike$weather_conditions.coverage" NAME="weather_conditions Coverage Results" MODIFIED="1726147054036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
+    <SUITE FILE_PATH="coverage/Air_Strike$aircrafts.coverage" NAME="aircrafts Coverage Results" MODIFIED="1726147351699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/Air_Strike$json_reader.coverage" NAME="json_reader Coverage Results" MODIFIED="1726126460758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Services" />
     <SUITE FILE_PATH="coverage/Air_Strike$json_service.coverage" NAME="json_service Coverage Results" MODIFIED="1726124472598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Services" />
-    <SUITE FILE_PATH="coverage/Air_Strike$files_reader.coverage" NAME="files_reader Coverage Results" MODIFIED="1726140982491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
+    <SUITE FILE_PATH="coverage/Air_Strike$files_reader.coverage" NAME="files_reader Coverage Results" MODIFIED="1726147572607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
+    <SUITE FILE_PATH="coverage/Air_Strike$pilots.coverage" NAME="pilots Coverage Results" MODIFIED="1726148693283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/Air_Strike$main.coverage" NAME="main Coverage Results" MODIFIED="1726134630227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

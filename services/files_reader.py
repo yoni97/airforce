@@ -1,6 +1,6 @@
 import json
 import math
-from weather_conditions import *
+# from weather_conditions import *
 
 aircrafts_json_file = '../json_files/aircrafts.json'
 pilots_json_file = '../json_files/pilots.json'
@@ -14,16 +14,7 @@ def read_from_json(json_file):
     except FileNotFoundError as e:
         return e
 
-# print(read_from_jason(pilots_json_file))
-
-
-
-
-
-
-# print(haversine_distance(IL_LAT, IL_LON, LAT2, LON2))
-
-
+# print(read_from_json(aircrafts_json_file))
 
 weights = {
     "distance" : 0.15,
@@ -46,8 +37,8 @@ def maped_cities():
 
 
 
-list_of_pilots = sorted(read_from_json(pilots_json_file), key=lambda k: k['skill_level'], reverse=True)
-list_of_aircrafts = sorted(read_from_json(aircrafts_json_file), key=lambda z: z['fuel_capacity'], reverse=True)
-list_of_targets = sorted(read_from_json(targets_json_file), key=lambda k: k['Priority'], reverse=True)
-zip_to_missions = list(zip(list_of_pilots, list_of_aircrafts, list_of_targets))
-print(zip_to_missions)
+# list_of_pilots = sorted(read_from_json(pilots_json_file), key=lambda k: k['skill_level'], reverse=True)
+# list_of_aircrafts = sorted(read_from_json(aircrafts_json_file), key=lambda z: z['fuel_capacity'], reverse=True)
+# list_of_targets = sorted(read_from_json(targets_json_file), key=lambda k: k['Priority'], reverse=True)
+# zip_to_missions = list(zip(list_of_pilots, list_of_aircrafts, list_of_targets))
+# print(zip_to_missions)
