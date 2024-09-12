@@ -4,25 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b818ac01-d38c-40f0-aa9b-6b45dc26a980" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Air_Strike.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csv_files/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json_files/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json_files/air_strike_targets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json_files/aircrafts.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json_files/pilots.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/aircrafts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/pilots.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/files_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/weather_conditions.py" afterDir="false" />
+    <list default="true" id="b818ac01-d38c-40f0-aa9b-6b45dc26a980" name="Changes" comment="creata the reads from json">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_files/air_strike_targets.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/files_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/files_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/weather_conditions.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/weather_conditions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,12 +155,33 @@
       <workItem from="1726133257447" duration="245000" />
       <workItem from="1726133608234" duration="392000" />
       <workItem from="1726134057990" duration="5505000" />
-      <workItem from="1726140953222" duration="436000" />
+      <workItem from="1726140953222" duration="1640000" />
     </task>
+    <task id="LOCAL‎-00001" summary="creata the reads from json">
+      <option name="closed" value="true" />
+      <created>1726141570134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726141570134</updated>
+    </task>
+    <task id="LOCAL‎-00002" summary="creata the reads from json">
+      <option name="closed" value="true" />
+      <created>1726141583582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726141583582</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="creata the reads from json" />
+    <option name="LAST_COMMIT_MESSAGE" value="creata the reads from json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -188,7 +195,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Air_Strike$weather_conditions.coverage" NAME="weather_conditions Coverage Results" MODIFIED="1726140971460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
+    <SUITE FILE_PATH="coverage/Air_Strike$weather_conditions.coverage" NAME="weather_conditions Coverage Results" MODIFIED="1726141988221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
     <SUITE FILE_PATH="coverage/Air_Strike$json_reader.coverage" NAME="json_reader Coverage Results" MODIFIED="1726126460758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Services" />
     <SUITE FILE_PATH="coverage/Air_Strike$json_service.coverage" NAME="json_service Coverage Results" MODIFIED="1726124472598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Services" />
     <SUITE FILE_PATH="coverage/Air_Strike$files_reader.coverage" NAME="files_reader Coverage Results" MODIFIED="1726140982491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
