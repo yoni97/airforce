@@ -13,7 +13,7 @@ IL_LON = 35.211980759695
 
 
 def get_weather(__target_city):
-    return get_weather(__target_city)
+    print(get_weather())
 
 class Target():
     def __init__(self, city: str, lat: float, lon: float, priority: int):

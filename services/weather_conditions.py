@@ -51,18 +51,26 @@ def filter_the_weather():
 
     new_dict["lat"] = get_weather["city"]["coord"]["lat"]
     new_dict["lon"] = get_weather["city"]["coord"]["lon"]
-    new_dict["main"] = get_weather["list"][0]["weather"][0]["main"]
+    new_dict["weather"] = get_weather["list"][0]["weather"][0]["main"]
     new_dict["clouds"] = get_weather["list"][0]["clouds"]["all"]
-    new_dict["speed"] = get_weather["list"][0]["wind"]["speed"]
+    new_dict["wind"] = get_weather["list"][0]["wind"]["speed"]
     new_dict["dt_txt"] = get_weather["list"][3]["dt_txt"]
     return new_dict
 # print(filter_the_weather())
 
 def get_weather(city):
     weather = get_weather_temperature(city)
-    w = {}
-    w['clouds'] = weather["list"][0]["clouds"]["all"]
+    w = weather["list"][0]["clouds"]["all"]
     return w
+# print(get_weather(city))
+
+def get_wind():
+    weather = get_weather_geo(city)
+    wind = weather["list"][0]["wind"]["speed"]
+
+number_of_theweather = get_weather(city)
+
+# def calculate_weather(get_weather, ):
 
 
 
