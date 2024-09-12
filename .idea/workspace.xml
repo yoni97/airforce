@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b818ac01-d38c-40f0-aa9b-6b45dc26a980" name="Changes" comment="move the function to their placec">
+    <list default="true" id="b818ac01-d38c-40f0-aa9b-6b45dc26a980" name="Changes" comment="write the calculate function">
+      <change afterPath="$PROJECT_DIR$/models/execute_missions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/targets.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/targets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/files_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/files_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/algorithms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/weather_conditions.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/weather_conditions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
     "Python.main.executor": "Run",
     "Python.pilots.executor": "Run",
     "Python.targets.executor": "Run",
-    "Python.weather_conditions.executor": "Debug",
+    "Python.weather_conditions.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -158,7 +159,7 @@
       <workItem from="1726133257447" duration="245000" />
       <workItem from="1726133608234" duration="392000" />
       <workItem from="1726134057990" duration="5505000" />
-      <workItem from="1726140953222" duration="9292000" />
+      <workItem from="1726140953222" duration="11552000" />
     </task>
     <task id="LOCAL‎-00001" summary="creata the reads from json">
       <option name="closed" value="true" />
@@ -192,7 +193,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1726148869163</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="write the calculate function">
+      <option name="closed" value="true" />
+      <created>1726150620836</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1726150620836</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +211,8 @@
     <MESSAGE value="creata the reads from json" />
     <MESSAGE value="aplly classe" />
     <MESSAGE value="move the function to their placec" />
-    <option name="LAST_COMMIT_MESSAGE" value="move the function to their placec" />
+    <MESSAGE value="write the calculate function" />
+    <option name="LAST_COMMIT_MESSAGE" value="write the calculate function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -211,16 +221,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/services/weather_conditions.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/services/weather_conditions.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -234,9 +234,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Air_Strike$aircrafts.coverage" NAME="aircrafts Coverage Results" MODIFIED="1726147351699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/Air_Strike$weather_conditions.coverage" NAME="weather_conditions Coverage Results" MODIFIED="1726150202045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
+    <SUITE FILE_PATH="coverage/Air_Strike$weather_conditions.coverage" NAME="weather_conditions Coverage Results" MODIFIED="1726151925928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />
     <SUITE FILE_PATH="coverage/Air_Strike$json_reader.coverage" NAME="json_reader Coverage Results" MODIFIED="1726126460758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Services" />
-    <SUITE FILE_PATH="coverage/Air_Strike$targets.coverage" NAME="targets Coverage Results" MODIFIED="1726150288197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/Air_Strike$targets.coverage" NAME="targets Coverage Results" MODIFIED="1726152017603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/Air_Strike$json_service.coverage" NAME="json_service Coverage Results" MODIFIED="1726124472598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Services" />
     <SUITE FILE_PATH="coverage/Air_Strike$pilots.coverage" NAME="pilots Coverage Results" MODIFIED="1726148693283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/Air_Strike$files_reader.coverage" NAME="files_reader Coverage Results" MODIFIED="1726149355028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/services" />

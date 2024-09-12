@@ -1,4 +1,6 @@
 import math
+
+from services.files_reader import read_from_json, aircrafts_json_file, pilots_json_file
 from services.weather_conditions import get_weather_geo
 from services import *
 from json_files import *
@@ -11,9 +13,11 @@ LAT2 = get_geo[0]['lat']
 IL_LAT = 31.79592425
 IL_LON = 35.211980759695
 
+def weather_score(self, __weather):
+    return weather_score(__weather)
 
 def get_weather(__target_city):
-    print(get_weather())
+    return get_weather()
 
 class Target():
     def __init__(self, city: str, lat: float, lon: float, priority: int):
@@ -40,24 +44,41 @@ class Target():
         return distance
 
     # @staticmethod
-    def weather_score(self, weather):
-        if weather['clouds'] == 'clear':
-            return 1.0
-        elif weather['clouds'] == 'clouds':
-            return 0.7
-        elif weather['clouds'] == 'rain':
-            return 0.4
-        elif weather['clouds'] == 'stormy':
-            return 0.2
-        else:
-            return 0
-
-
-
-
+    # def weather_score(self, weather):
+    #     if weather['clouds'] == 'clear':
+    #         return 1.0
+    #     elif weather['clouds'] == 'clouds':
+    #         return 0.7
+    #     elif weather['clouds'] == 'rain':
+    #         return 0.4
+    #     elif weather['clouds'] == 'stormy':
+    #         return 0.2
+    #     else:
+    #         return 0
 
     def lat(self):
         return LAT2
 
     def lon(self):
         return LON2
+for plain in read_from_json(aircrafts_json_file):
+    for pilot in read_from_json(pilots_json_file):
+        for target in read_from_json(aircrafts_json_file):
+
+def generate_missions(target_cities, aircrafts, pilots):
+    missions = []
+    for key, city in target_cities.items():
+        for key, aircraft in aircrafts.items():
+            for key, pilot in pilots.items():
+                missions.append(Attack(
+                    city.city,
+                    city.priority,
+                    pilot.name,
+                    aircraft.type,
+                    city.distance,
+                    city.weather_score,
+                    city.weather_conditions,
+                    pilot.skill_level,
+                    aircraft.speed,
+                    aircraft.fuel_capacity))
+    return missions
