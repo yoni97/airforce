@@ -14,7 +14,7 @@ def read_from_json(json_file):
     except FileNotFoundError as e:
         return e
 
-print(json.dumps(read_from_json(aircrafts_json_file), indent=4, ensure_ascii=False))
+# print(json.dumps(read_from_json(aircrafts_json_file), indent=4, ensure_ascii=False))
 
 weights = {
     "distance" : 0.15,
@@ -38,8 +38,6 @@ def maped_cities():
 
 
 
-# list_of_pilots = sorted(read_from_json(pilots_json_file), key=lambda k: k['skill_level'], reverse=True)
-# list_of_aircrafts = sorted(read_from_json(aircrafts_json_file), key=lambda z: z['fuel_capacity'], reverse=True)
-# list_of_targets = sorted(read_from_json(targets_json_file), key=lambda k: k['Priority'], reverse=True)
-# zip_to_missions = list(zip(list_of_pilots, list_of_aircrafts, list_of_targets))
-# print(zip_to_missions)
+
+
+

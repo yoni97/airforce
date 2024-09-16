@@ -8,7 +8,3 @@ class Pilots():
         self.skill_level = skill_level
 
 
-
-for pilot in read_from_json(pilots_json_file):
-    pilot = Pilots(**pilot)
-    print(pilot.name, pilot.skill_level)
